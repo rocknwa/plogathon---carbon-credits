@@ -1,0 +1,44 @@
+{
+  "author": "Godspower Anthony-Ikpe",
+  "bugs": {
+    "url": "https://github.com/celo-org/celo-composer/issues"
+  },
+  "description": "Custom Celo Composer project.",
+  "homepage": "https://github.com/celo-org/celo-composer/blob/main/README.md",
+  "keywords": [
+    "celo-composer",
+    "celo"
+  ],
+  "license": "MIT",
+  "name": "carbon-credits",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/celo-org/celo-composer.git"
+  },
+  "resolutions": {
+    "@wagmi/connectors": "5.7.7",
+    "@wagmi/core": "2.16.7",
+    "viem": "2.23.2",
+    "wagmi": "2.14.11"
+  },
+  "scripts": {
+    "react-app:dev": "yarn workspace @carbon-credits/react-app dev",
+    "react-app:build": "yarn workspace @carbon-credits/react-app build",
+    "react-app:start": "yarn workspace @carbon-credits/react-app start",
+    "react-app:lint": "yarn workspace @carbon-credits/react-app lint",
+    "hardhat:postinstall": "yarn workspace @carbon-credits/hardhat postinstall",
+    "hardhat:compile": "yarn workspace @carbon-credits/hardhat compile",
+    "hardhat:tsc": "yarn workspace @carbon-credits/hardhat tsc",
+    "hardhat:build": "yarn workspace @carbon-credits/hardhat build",
+    "hardhat:clean": "yarn workspace @carbon-credits/hardhat clean",
+    "hardhat:run:node": "yarn workspace @carbon-credits/hardhat run:node",
+    "hardhat:test": "yarn workspace @carbon-credits/hardhat test",
+    "hardhat:prettier": "yarn workspace @carbon-credits/hardhat prettier",
+    "hardhat:sync:abis": "yarn workspace @carbon-credits/hardhat sync:abis"
+  },
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*"
+  ]
+}
